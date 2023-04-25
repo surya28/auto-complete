@@ -1,0 +1,130 @@
+.autocomplete-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 62.5%;
+}
+
+.autocomplete-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.autocomplete-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.autocomplete-button {
+    padding: 5px 10px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.autocomplete-button:hover {
+    background-color: #0062a3;
+}
+
+.autocomplete-clear-button {
+    padding: 5px 10px;
+    background-color: #eee;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.autocomplete-clear-button:hover {
+    background-color: #ccc;
+}
+
+.autocomplete-results .autocomplete-history {
+    margin-top: 10px;
+    width: 40%;
+    font-size: 1.5rem;
+}
+
+.autocomplete-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    border: 2px solid #2b2561;
+    border-radius: 5px;
+    width: 30rem;
+    text-align: left;
+}
+
+.autocomplete-history p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.autocomplete-history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid #0062a3;
+    border-radius: 5px;
+    width: 30rem;
+    text-align: left;
+}
+
+.autocomplete-results li {
+    font-size: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    border-bottom: 1px dotted #ccdae3;
+}
+
+.autocomplete-history li {
+    font-size: 1rem;
+    margin: 0.5rem;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    border-bottom: 1px dotted #ccdae2;
+}
+
+.autocomplete-results li::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 10px;
+    background-image: url("../static/images/results.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.autocomplete-results li:hover {
+    background-color: #f0f0f0;
+}
+
+.autocomplete-history li::before {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 10px;
+    background-image: url("../static/images/history.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.autocomplete-results li b {
+    font-weight: bold;
+    color: #0077cc;
+}
