@@ -84,6 +84,26 @@ const Autocomplete = () => {
                     Clear
                 </button>
             </form>
+            <p className="tip">
+                Tip - search among these words -
+                apple,
+                banana,
+                cherry,
+                date,
+                elderberry,
+                fig,
+                grape,
+                kiwi,
+                lemon,
+                mango,
+                orange,
+                peach,
+                pineapple,
+                raspberry,
+                strawberry,
+                tangerine,
+                watermelon,
+            </p>
             <div className="autocomplete-results">
                 {searchResults.length > 0 && (
                     <ul>
